@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title> Exercicio 03 </title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <style>
+      .content{
+        padding-top:1px;
+        width: 100%;
+        background-color:white;
+        height:400px;
+      }
+
+      .elemento1, .elemento2{
+        width: 100px;
+        height: 100px;
+        margin-top:30px;
+        display: inline-block;
+        
+      }
+      .elemento1{
+        background-color:blue;
+        transition: width 0.8s ease-out;
+        
+      }
+
+      .elemento1:hover{
+        width: 600px;
+      }
+
+      .elemento2{
+        background-color:red;
+        transition: all 2s ease-out;
+        
+      }
+      .elemento1:hover .elemento2{
+        transition: rotate(45deg);
+      }
+
+    </style>
+  </head>
+
+  <main>
+    <header class="main-header"></header>
+    <div class="content">
+        <div class="elemento1"></div>
+        <div class="elemento2"></div>
+    </div><!--content-->
+    </section>
+  </main>
+</html>

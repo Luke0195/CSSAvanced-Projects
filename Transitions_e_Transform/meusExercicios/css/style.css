@@ -1,0 +1,59 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+
+}
+
+html,body{
+  height: 100%;
+  background-color: #bcb;
+}
+
+
+main{
+  width: 100%;
+  max-width: 800px;
+  margin:10px auto;
+  padding:1px;
+}
+
+header{
+  width: 100%;
+  height:100px;
+  background-image: url('../../_img/topo.jpg');
+  background-size:100% 100%;
+}
+
+.main-section{
+  padding:18px;
+  height: 400px;
+  background-color:#fff;
+  box-shadow: 3px 4px rgba(180,180,180, 0.7);
+}
+
+.gallery{
+  margin-top:60px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery .img{
+  margin: 0 16px;
+  cursor: pointer;
+  transition: transform 0.8s ease-out;
+  transform-origin:top left;
+} 
+
+.gallery .img:hover{
+  transform:  scale(1.3);
+}
+
+
+
+ /* transform:rotate(360deg);  Rodaciona o elemento */
+ /*transform: translate(-10px ,-10px); O primeiro parametro é para o eixo x e o segundo para o eixo y */
+ /*  transform: skew(-45deg); */
+ /* transform : scale(2) rotate(360deg); Podemos combinar varios tipos de transforms */
